@@ -1,0 +1,52 @@
+[
+  {
+    "customer_id": 1,
+    "payment_type_id": null,
+    "create_date": "2017-03-25T12:27:25.382Z"
+  },
+  {
+    "customer_id": 2,
+    "payment_type_id": 2,
+    "create_date": "2017-10-30T00:45:14.932Z"
+  },
+  {
+    "customer_id": 3,
+    "payment_type_id": 3,
+    "create_date": "2017-08-27T00:20:04.796Z"
+  },
+  {
+    "customer_id": 4,
+    "payment_type_id": 4,
+    "create_date": "2017-10-01T02:58:57.301Z"
+  },
+  {
+    "customer_id": 5,
+    "payment_type_id": 5,
+    "create_date": "2017-04-20T01:16:30.020Z"
+  },
+  {
+    "customer_id": 6,
+    "payment_type_id": 6,
+    "create_date": "2017-05-18T19:06:04.545Z"
+  },
+  {
+    "customer_id": 7,
+    "payment_type_id": 7,
+    "create_date": "2017-10-29T18:21:42.533Z"
+  },
+  {
+    "customer_id": 8,
+    "payment_type_id": 8,
+    "create_date": "2017-11-04T09:14:29.109Z"
+  },
+  {
+    "customer_id": 9,
+    "payment_type_id": 9,
+    "create_date": "2017-08-09T05:08:49.268Z"
+  },
+  {
+    "customer_id": 10,
+    "payment_type_id": 10,
+    "create_date": "2017-04-23T15:56:44.099Z"
+  }
+]
