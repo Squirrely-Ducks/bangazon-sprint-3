@@ -1,4 +1,17 @@
 if session.passport
   span #{session.passport.user.username}
+  .nav-flex
+    form(method="POST" action="/search")
+      input.searchBar(type="text" placeholder="search-products")
+      button(type="submit" formaction="/search") search
+    ul.navMenu
+      li 
+        a(href="/sell") Sell Product
+      li 
+        a(href="/products") My Products
+      li 
+        a(href="/account") My Account
+      li 
+        a(href="/cart") Shopping Cart
   form(method="POST")
     button(type="submit" formaction="/logout") logout
