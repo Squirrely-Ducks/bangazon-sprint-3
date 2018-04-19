@@ -14,15 +14,20 @@ module.exports = (sequelize, DataTypes) => {
   );
   Product.associate = function(models) {
     // associations can be defined here
-    // Product.belongsTo(models.Customer, {
-    //   foreignKey: "customerId"
-    // });
-    // Product.belongsTo(models.Product_Type, {
-    //   foreignKey: "productTypeId"
-    // });
-    // Product.hasMany(model.User_product, {
-    //   foreign: "productId"
-    // });
+    Product.belongsTo(models.Customer, {
+      foreignKey: "customerId"
+    });
+    Product.belongsTo(models.Product_Type, {
+      foreignKey: "productTypeId"
+    });
+    Product.belongsToMany(model.User, {
+      foreignKey: "productId",
+      through: User_product
+    });
+    Product.belongsToMany(model.Order, {
+      foreignKey: "productId",
+      through: order_product
+    });
   };
   return Product;
 };
