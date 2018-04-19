@@ -14,12 +14,12 @@ module.exports = (sequelize, DataTypes) => {
   );
   Product.associate = function(models) {
     // associations can be defined here
-    Product.belongsTo(models.Customer, {
-      foreignKey: "customerId"
-    });
-    Product.belongsTo(models.ProductType, {
-      foreignKey: "productTypeId"
-    });
+    // Product.belongsTo(models.Customer, {
+    //   foreignKey: "customerId"
+    // });
+    // Product.belongsTo(models.Product_Type, {
+    //   foreignKey: "productTypeId"
+    // });
   };
   return Product;
 };

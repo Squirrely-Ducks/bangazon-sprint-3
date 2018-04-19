@@ -1,18 +1,18 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
-  var ProductType = sequelize.define(
+  var Product_Type = sequelize.define(
     "ProductType",
     {
       type: DataTypes.STRING
     },
-    { timestamps: false, tableName: "productTypes" }
+    { timestamps: false, tableName: "product-types" }
   );
-  ProductType.associate = function(models) {
+  Product_Type.associate = function(models) {
     // associations can be defined here
-    ProductType.hasMany(models.Product, {
+    Product_Type.hasMany(models.Product, {
       foreignKey: "productTypeId",
       onDelete: "CASCADE"
     });
   };
-  return ProductType;
+  return Product_Type;
 };
