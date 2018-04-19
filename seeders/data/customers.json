@@ -1,0 +1,94 @@
+{
+  "customers": [
+    {
+      "first_name": "Fred",
+      "last_name": "Smith",
+      "street": "500 Somewho Lane",
+      "city": "St. Louis",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Yolanda",
+      "last_name": "Garrison",
+      "street": "123 Mockingbird Ln",
+      "city": "Monkeys Elbow",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Maurice",
+      "last_name": "Moss",
+      "street": "3098 Moms House Way",
+      "city": "Fanta Say",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Fred",
+      "last_name": "Sanford",
+      "street": "45 Bigdummy Rd",
+      "city": "Nashvegas",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Cher",
+      "last_name": null,
+      "street": "500 Somewhen Lane Apt 1",
+      "city": "New Detroit",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Danny",
+      "last_name": "Elfman",
+      "street": "666 Beetlejuice Way",
+      "city": "Emerald City",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Myrtle",
+      "last_name": "Moaning",
+      "street": "500 Somewhat Lane",
+      "city": "Pleasantville",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Ben",
+      "last_name": "Gentle",
+      "street": "1 The Woods",
+      "city": "Cedar Rapids",
+      "state": "Iowa",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Floyd",
+      "last_name": "Quigly",
+      "street": "1 Cacatastrophe",
+      "city": "Turtle Bay",
+      "state": "Arkansas",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    },
+    {
+      "first_name": "Richie",
+      "last_name": "Pic",
+      "street": "123 Street St",
+      "city": "Iowa City",
+      "state": "Alabama",
+      "zip": "12345",
+      "phone": "123-555-5309"
+    }
+  ]
+}
