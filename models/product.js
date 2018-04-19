@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     "Product",
     {
       title: DataTypes.STRING,
-      price: DataTypes.INTEGER,
+      price: DataTypes.STRING,
       description: DataTypes.STRING,
       img: DataTypes.STRING,
       create_date: DataTypes.STRING,
@@ -19,6 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     // });
     // Product.belongsTo(models.Product_Type, {
     //   foreignKey: "productTypeId"
+    // });
+    // Product.hasMany(model.User_product, {
+    //   foreign: "productId"
     // });
   };
   return Product;

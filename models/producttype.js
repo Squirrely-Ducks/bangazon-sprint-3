@@ -1,11 +1,11 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
   var Product_Type = sequelize.define(
-    "ProductType",
+    "Product_Type",
     {
       type: DataTypes.STRING
     },
-    { timestamps: false, tableName: "product-types" }
+    { timestamps: false, tableName: "product_types" }
   );
   Product_Type.associate = function(models) {
     // associations can be defined here
