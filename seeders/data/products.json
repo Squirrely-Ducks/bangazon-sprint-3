@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "seller_id": 10,
-      "product_type_id": 1,
+      "userId": 10,
+      "productTypeId": 1,
       "title": "Fantastic Frozen Bacon",
       "price": "327.00",
       "description": "vertical e-enable models",
@@ -11,8 +11,8 @@
       "quantity": 19
     },
     {
-      "seller_id": 9,
-      "product_type_id": 2,
+      "userId": 9,
+      "productTypeId": 2,
       "title": "Unbranded Steel Fish",
       "price": "515.00",
       "description": "killer optimize niches",
@@ -21,8 +21,8 @@
       "quantity": 24
     },
     {
-      "seller_id": 8,
-      "product_type_id": 3,
+      "userId": 8,
+      "productTypeId": 3,
       "title": "Handcrafted Concrete Sausages",
       "price": "157.00",
       "description": "viral engage technologies",
@@ -31,8 +31,8 @@
       "quantity": 15
     },
     {
-      "seller_id": 7,
-      "product_type_id": 4,
+      "userId": 7,
+      "productTypeId": 4,
       "title": "Handcrafted Soft Table",
       "price": "644.00",
       "description": "impactful transform architectures",
@@ -41,8 +41,8 @@
       "quantity": 29
     },
     {
-      "seller_id": 6,
-      "product_type_id": 5,
+      "userId": 6,
+      "productTypeId": 5,
       "title": "Fantastic Wooden Bacon",
       "price": "14.00",
       "description": "B2B deliver bandwidth",
@@ -51,8 +51,8 @@
       "quantity": 14
     },
     {
-      "seller_id": 5,
-      "product_type_id": 6,
+      "userId": 5,
+      "productTypeId": 6,
       "title": "Ergonomic Plastic Hat",
       "price": "555.00",
       "description": "strategic monetize technologies",
@@ -61,8 +61,8 @@
       "quantity": 16
     },
     {
-      "seller_id": 4,
-      "product_type_id": 7,
+      "userId": 4,
+      "productTypeId": 7,
       "title": "Ergonomic Wooden Hat",
       "price": "690.00",
       "description": "extensible target technologies",
@@ -71,8 +71,8 @@
       "quantity": 24
     },
     {
-      "seller_id": 3,
-      "product_type_id": 8,
+      "userId": 3,
+      "productTypeId": 8,
       "title": "Refined Granite Shoes",
       "price": "385.00",
       "description": "one-to-one deliver partnerships",
@@ -81,8 +81,8 @@
       "quantity": 26
     },
     {
-      "seller_id": 2,
-      "product_type_id": 9,
+      "userId": 2,
+      "productTypeId": 9,
       "title": "Intelligent Frozen Computer",
       "price": "274.00",
       "description": "end-to-end drive web-readiness",
@@ -91,8 +91,8 @@
       "quantity": 17
     },
     {
-      "seller_id": 1,
-      "product_type_id": 10,
+      "userId": 1,
+      "productTypeId": 10,
       "title": "Handcrafted Plastic Salad",
       "price": "930.00",
       "description": "virtual repurpose functionalities",
