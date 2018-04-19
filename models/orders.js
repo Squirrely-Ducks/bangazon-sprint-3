@@ -1,17 +1,18 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Orders = sequelize.define('Orders', {
-    create_date: DataTypes.INTEGER
-  }, { timestamps: false, tableName: "orders"});
+    create_date: DataTypes.STRING
+  }, { timestamps: true, paranoid: true, tableName: "orders"});
   Orders.associate = function (models) {
     // associations can be defined here
     Orders.belongsTo(models.Payment_Types, {
-    foreignKey: "paymentTypeId",
-    onDelete: "CASCADE"
+    foreignKey: "paymentTypeId"
     })
-    Orders.belongsTo(models.Customer, {
-      foreignKey: "customerId",
-      onDelete: "CASCADE"
+    Orders.belongsTo(models.User, {
+      foreignKey: "userId"
+    })
+    Orders.belongsToMany(models.Product, {
+      through: "order_products"
     })
   };
   return Orders;

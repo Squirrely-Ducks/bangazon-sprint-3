@@ -1,0 +1,54 @@
+{
+  "payment_types": [
+    {
+      "type": "Visa",
+      "account_number": "5158431997693020",
+      "userId": 1
+    },
+    {
+      "type": "American Express",
+      "account_number": "1481319228632246",
+      "userId": 2
+    },
+    {
+      "type": "MasterCard",
+      "account_number": "2296989480874185",
+      "userId": 3
+    },
+    {
+      "type": "American Express",
+      "account_number": "1950724954952350",
+      "userId": 4
+    },
+    {
+      "type": "Visa",
+      "account_number": "4201425459385336",
+      "userId": 5
+    },
+    {
+      "type": "American Express",
+      "account_number": "4393227676321410",
+      "userId": 6
+    },
+    {
+      "type": "MasterCard",
+      "account_number": "7846510007708222",
+      "userId": 7
+    },
+    {
+      "type": "American Express",
+      "account_number": "3818367831514034",
+      "userId": 8
+    },
+    {
+      "type": "Visa",
+      "account_number": "5576038688150810",
+      "userId": 9
+    },
+    {
+      "type": "MasterCard",
+      "account_number": "7327102467634968",
+      "userId": 10
+    }
+  ]
+}
