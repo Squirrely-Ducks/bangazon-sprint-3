@@ -5,9 +5,13 @@ if session.passport
       input.searchBar(type="text" placeholder="search-products")
       button(type="submit" formaction="/search") search
     ul.navMenu
-      li Sell Product
-      li My Products
-      li My Account
-      li Shopping Cart
+      li 
+        a(href"/sell") Sell Product
+      li 
+        a(href"/products") My Products
+      li 
+        a(href"/account") My Account
+      li 
+        a(href"/cart") Shopping Cart
   form(method="POST")
     button(type="submit" formaction="/logout") logout
