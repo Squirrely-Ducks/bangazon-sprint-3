@@ -2,19 +2,22 @@
 
 let sequelize = require('sequelize');
 let queryInterface = require('sequelize/lib/query-interface');
+let models = require('./models')
 
-const { orders } = require('./seeders/data/orders.json');
-const { payment_types } = require('./seeders/data/payment-types.json');
+
+// const { orders } = require('./seeders/data/orders.json');
+// const { payment_types } = require('./seeders/data/payment-types.json');
 
 let createdb = (queryInterface) => {
-    const app = require('./app');
-    const models = app.get('models');
     return models.sequelize.sync({ force: true })
         .then((queryInterface) => {
-            return models.Orders.bulkCreate(orders)
+            return models.Orders
         })
         .then((queryInterface) => {
-            return models.Payment_Types.bulkCreate(payment_types)
+            return models.Payment_Types
+        })
+        .then(()=>{
+            process.exit()
         })
 }
 createdb(queryInterface);
