@@ -1,52 +1,54 @@
-[
-  {
-    "customer_id": 1,
-    "type": "Visa",
-    "account_number": 5158431997693020
-  },
-  {
-    "customer_id": 2,
-    "type": "American Express",
-    "account_number": 1481319228632246
-  },
-  {
-    "customer_id": 3,
-    "type": "MasterCard",
-    "account_number": 2296989480874185
-  },
-  {
-    "customer_id": 4,
-    "type": "American Express",
-    "account_number": 1950724954952350
-  },
-  {
-    "customer_id": 5,
-    "type": "Visa",
-    "account_number": 4201425459385336
-  },
-  {
-    "customer_id": 6,
-    "type": "American Express",
-    "account_number": 4393227676321410
-  },
-  {
-    "customer_id": 7,
-    "type": "MasterCard",
-    "account_number": 7846510007708222
-  },
-  {
-    "customer_id": 8,
-    "type": "American Express",
-    "account_number": 3818367831514034
-  },
-  {
-    "customer_id": 9,
-    "type": "Visa",
-    "account_number": 5576038688150810
-  },
-  {
-    "customer_id": 10,
-    "type": "MasterCard",
-    "account_number": 7327102467634968
-  }
-]
+{
+  "payment_types": [
+    {
+      "customer_id": 1,
+      "type": "Visa",
+      "account_number": 5158431997693020
+    },
+    {
+      "customer_id": 2,
+      "type": "American Express",
+      "account_number": 1481319228632246
+    },
+    {
+      "customer_id": 3,
+      "type": "MasterCard",
+      "account_number": 2296989480874185
+    },
+    {
+      "customer_id": 4,
+      "type": "American Express",
+      "account_number": 1950724954952350
+    },
+    {
+      "customer_id": 5,
+      "type": "Visa",
+      "account_number": 4201425459385336
+    },
+    {
+      "customer_id": 6,
+      "type": "American Express",
+      "account_number": 4393227676321410
+    },
+    {
+      "customer_id": 7,
+      "type": "MasterCard",
+      "account_number": 7846510007708222
+    },
+    {
+      "customer_id": 8,
+      "type": "American Express",
+      "account_number": 3818367831514034
+    },
+    {
+      "customer_id": 9,
+      "type": "Visa",
+      "account_number": 5576038688150810
+    },
+    {
+      "customer_id": 10,
+      "type": "MasterCard",
+      "account_number": 7327102467634968
+    }
+  ]
+}
