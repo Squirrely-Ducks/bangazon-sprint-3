@@ -29,7 +29,6 @@ const addSellProduct = (req, res, next) => {
     });
   } else {
       res.render('login');
-
   }
 }
 
