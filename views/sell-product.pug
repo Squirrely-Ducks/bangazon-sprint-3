@@ -12,9 +12,10 @@ block content
     h3 Description:
     input(type="text" name="description" placeholder="description")
     h3 Image URL:
-    input(type="text" name="image" placeholder="image")
+    input(type="text" name="img" placeholder="image")
     h3 Quantity:
     input(type="text" name="quantity" placeholder="quantity")
-    h3 Product Type
-    input(type="text" name="productTypeId" placeholder="Select-Placeholer")
+    select(name="productTypeId")
+      each prod in productType
+        option(value = prod.id) #{prod.type}
     button.sellSubmit(type="submit") Submit

@@ -1,13 +1,19 @@
 "use strict";
 
 const displaySellProduct = (req, res, next) => {
-  res.render('sell-product');
+  let { Product_Type } = req.app.get('models');
+  Product_Type.findAll({raw: true})
+  .then(productType => {
+    res.render('sell-product', {productType});
+  });
+
 };
 
 const addSellProduct = (req, res, next) => {
   let { Product } = req.app.get('models');
   let user = req.app.get("user");
   let {...newProduct} = req.body;
+  console.log('NEW PRODUCT: ', newProduct );
   //CHECK FOR USER
   if (user) {
     //Add Create Date
