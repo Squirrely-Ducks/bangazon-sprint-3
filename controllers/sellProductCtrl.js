@@ -13,7 +13,6 @@ const addSellProduct = (req, res, next) => {
   let { Product } = req.app.get('models');
   let user = req.app.get("user");
   let {...newProduct} = req.body;
-  console.log('NEW PRODUCT: ', newProduct );
   //CHECK FOR USER
   if (user) {
     //Add Create Date
@@ -25,7 +24,8 @@ const addSellProduct = (req, res, next) => {
     //POST TO DATABASE
     Product.create(newProduct)
     .catch(err => {
-      console.log('ERROR: ', err );
+      //TODO: ADD ERROR HANDLERS
+      console.log("ERROR: ", err);
     });
   } else {
       res.render('login');
