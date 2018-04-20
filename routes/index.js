@@ -2,13 +2,13 @@
 
 const { Router } = require('express');
 const router = Router();
+const { myAccountView } = require('../controllers/account-viewCtrl');
 
 router.get('/', (req, res, next) => {
   res.render('index');
 });
-router.get('/account', (req, res) => {
-  res.render('my-account');
-});
+router.get('/account', myAccountView);
+
 router.get('/edit-account-info', (req, res) => {
   res.render('edit-account-info');
 });
