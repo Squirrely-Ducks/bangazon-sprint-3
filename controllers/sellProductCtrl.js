@@ -10,18 +10,20 @@ const addSellProduct = (req, res, next) => {
   let {...newProduct} = req.body;
   //CHECK FOR USER
   if (user) {
-    //ADD Create Date
+    //Add Create Date
     newProduct.create_date = (new Date()).toString();
+    //FORMAT PRICE
     newProduct.price = newProduct.price.replace(".","");
-    //ADD User Id
+    //ADD USER ID
     newProduct.userId = user.id;
-
+    //POST TO DATABASE
     Product.create(newProduct)
     .catch(err => {
       console.log('ERROR: ', err );
     });
   } else {
       res.render('login');
+
   }
 }
 
