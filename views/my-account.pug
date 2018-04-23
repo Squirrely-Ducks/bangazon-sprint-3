@@ -1,0 +1,31 @@
+extends welcome.pug
+
+block content
+  h1 My Account
+
+  ul.userInfo
+    h3 Customer/Merchant Info
+    li= `Name: ${user.first_name} ${user.last_name}`
+    li= `Username: ${user.username}`
+    li= `Email: ${user.email}`
+    li= `Phone: ${user.phone}`
+
+  ul.address
+    h3 Billing Address
+    li= `Street: ${user.street}`
+    li= `City: ${user.city}`
+    li= `State: ${user.state}`
+    li= `Zip: ${user.zip}`
+
+  ul.editForm
+    li
+      // link to pre-rendered template //
+      a(href="/edit-account-info") Edit Account Info
+    li
+      a(href="/view-orders") View Orders
+    li
+      a(href="/payment-types") Payment Types
+
+
+
+
