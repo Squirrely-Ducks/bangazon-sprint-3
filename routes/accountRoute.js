@@ -15,8 +15,6 @@ router.post("/edit", editAccount);
 router.get('/view-orders', (req, res) => {
   res.render('view-orders');
 });
-router.get('/payment-types', (req, res) => {
-  res.render('payment-types');
-});
+
 
 module.exports = router;
