@@ -23,6 +23,10 @@ const addSellProduct = (req, res, next) => {
     newProduct.userId = user.id;
     //POST TO DATABASE
     Product.create(newProduct)
+    .then(product => {
+      const { id } = product.get({plain:true});
+      res.redirect(`/product/details/${id}`);
+    })
     .catch(err => {
       //TODO: ADD ERROR HANDLERS
       console.log("ERROR: ", err);
