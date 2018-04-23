@@ -1,12 +1,15 @@
 "use strict";
 
+var Sequelize = require('sequelize');
+const Op = Sequelize.Op;
+
 module.exports.displayProductDetails = (req, res, next) => {
   const { Product } = req.app.get("models");
   let id = req.params.id;
-  Product.findOne({raw: true, where: {id}})
-  .then(product => {
-    res.render("product-details", { product });
-  });
+  Product.findOne({ raw: true, where: { id } })
+    .then(product => {
+      res.render("product-details", { product });
+    });
 };
 
 module.exports.displaySellList = (req, res, next) => {
@@ -26,3 +29,20 @@ module.exports.deleteProduct = (req, res, next) => {
     res.redirect("/products/list");
   });
 };
+
+// method that grabs search input and gets back products from db
+module.exports.searchProducts = (req, res, next) => {
+  let { Product } = req.app.get('models')
+  let { search } = req.body
+
+  Product.findAll({
+    where: {
+      title: {
+        [Op.like]: `%${search}`
+      }
+    }
+  })
+    .then(product => {
+      res.render("search-details", { product })
+    })
+}
