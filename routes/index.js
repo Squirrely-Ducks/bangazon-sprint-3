@@ -21,6 +21,9 @@ router.get('/payment-types', (req, res) => {
 
 // pipe all other requests through the route modules
 router.use(require('./authRoute'));
+router.use(require('./sellProductRoute'));
+router.use(require('./productRoute'));
+
 // router.use(require('./foo'));
 
 module.exports = router;
