@@ -1,10 +1,11 @@
 const { Router } = require("express");
 const router = Router();
-const {addPaymentType}= require('../controllers/paymentTypeCtrl');
+const {addPaymentType, displayPaymentType}= require('../controllers/paymentTypeCtrl');
 
-router.get("/addPaymentTypes", (req, res, next) => { 
+router.get("/payment-types", displayPaymentType);
+router.get("/payment-type/add", (req, res, next) => { 
     res.render("add-payment-type");
 });
-router.post("/addPaymentTypes",addPaymentType)
+router.post("/addPaymentTypes",addPaymentType);
 
 module.exports = router;
