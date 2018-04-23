@@ -34,7 +34,6 @@ module.exports.deleteProduct = (req, res, next) => {
 module.exports.searchProducts = (req, res, next) => {
   let { Product } = req.app.get('models')
   let { search } = req.body
-
   Product.findAll({
     where: {
       title: {
@@ -42,7 +41,8 @@ module.exports.searchProducts = (req, res, next) => {
       }
     }
   })
-    .then(product => {
-      res.render("search-details", { product })
-    })
-}
+  .then(product => {
+    res.render("search-details", { product })
+  })
+};
+

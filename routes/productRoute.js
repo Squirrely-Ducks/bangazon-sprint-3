@@ -6,8 +6,8 @@ const { displayProductDetails, displaySellList, deleteProduct, searchProducts } 
 
 router.get("/product/details/:id", displayProductDetails);
 router.post("/search", searchProducts)
-
 router.get("/products/list", displaySellList);
 router.post("/products/delete/:id", deleteProduct);
+
 
 module.exports = router;
