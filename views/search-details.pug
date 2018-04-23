@@ -1,0 +1,11 @@
+extends index.pug
+
+block content
+    .display-card
+    each prod in product
+        h2 Product Details
+        h3 Title:  #{prod.title}
+        img(src="http://via.placeholder.com/200x300" alt="Placeholder")
+        h4 Price: $#{prod.price.slice(0,-2)}.#{prod.price.slice(-2)}
+        h4 Description: #{prod.description}
+        h5 Quantity: #{prod.quantity}
