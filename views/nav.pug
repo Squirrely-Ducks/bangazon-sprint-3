@@ -2,7 +2,7 @@ if session.passport
   span #{session.passport.user.username}
   .nav-flex
     form(method="POST" action="/search")
-      input.searchBar(type="text" placeholder="search-products" name="search")
+      input.searchBar(type="text" placeholder="search-products")
       button(type="submit" formaction="/search") search
     ul.navMenu
       li 
