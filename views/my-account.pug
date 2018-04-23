@@ -5,17 +5,18 @@ block content
 
   ul.userInfo
     h3 Customer/Merchant Info
-    li= `Name: ${user.first_name} ${user.last_name}`
-    li= `Username: ${user.username}`
-    li= `Email: ${user.email}`
-    li= `Phone: ${user.phone}`
+    li= `Name: ${userData.first_name} ${userData.last_name}`
+    li= `Username: ${userData.username}`
+    li= `Email: ${userData.email}`
+    li= `Phone: ${userData.phone}`
+    li= `id: ${userData.id}`
 
   ul.address
     h3 Billing Address
-    li= `Street: ${user.street}`
-    li= `City: ${user.city}`
-    li= `State: ${user.state}`
-    li= `Zip: ${user.zip}`
+    li= `Street: ${userData.street}`
+    li= `City: ${userData.city}`
+    li= `State: ${userData.state}`
+    li= `Zip: ${userData.zip}`
 
   ul.editForm
     li
