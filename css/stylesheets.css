@@ -104,3 +104,7 @@ a {
   margin: 10px;
   padding: 3px
 }
+
+.editForm a:hover {
+  cursor: url("")
+}
