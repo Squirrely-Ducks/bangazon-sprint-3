@@ -1,19 +1,25 @@
 //- extends my-account
 
 block content
+  h1
+    a(href="account") Go Back to my account
   h1 Welcome to the payment type edit screen
   
   h2 Please make a selection
+
   ul
     li 
       a(href="/payment-type/add") ADD NEW PAYMENT TYPE
-    li DELETE PAYMENT TYPE
 
   h2 Here are your current payment types:
     ul 
     each payment in paymentType
-      li= `Card Type: ${payment.type}`
-      li= `Account number: ${payment.account_number}`
+      form(method="POST" action=`/payment-types/delete/${payment.id}`)    
+        li= `Card Type: ${payment.type}`
+        li= `Account number: ${payment.account_number}`
+        button(type="submit") Delete this Payment!
+     
+      
     
    
   
