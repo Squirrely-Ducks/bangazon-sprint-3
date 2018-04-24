@@ -1,0 +1,106 @@
+body {
+  background: url("../assets/america.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+li {
+  text-decoration-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  align-content: center;
+}
+.navContainer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: 1
+}
+
+.navContainer span {
+  grid-column: 2/4;
+  grid-row: 1;
+  font-family: 'Futura';
+  font-size: 3rem;
+  color: blue;
+  text-shadow: 3px 2px red,
+               4px 3px white; 
+}
+
+.navMenu {
+  grid-column: 1/2;
+  grid-row: 1;
+  display: flex;
+}
+
+.navMenu li {
+  border: 2px solid grey;
+  border-radius: 10px 0px 10px 0;
+  text-decoration-style: none;
+  text-align: center;
+  list-style-type: none;
+  background: rgba(95, 158, 160, 0.4) 
+}
+
+.navMenu li:hover {
+  background-image: url("../assets/fire.gif");
+  background-position: center; 
+  background-size: 100%;
+}
+
+
+.searchForm {
+  grid-column: 3/4;
+  grid-row: 1;
+  justify-self: right
+  
+}
+
+.userInfo {
+  border: 4px solid skyblue;
+  border-radius: 3px;
+  background: darkred;
+  color: whitesmoke
+}
+
+.userInfo:hover {
+  background-image: url("../assets/hulkGuitar.gif");
+  background-position: center; 
+  background-size: 100%;
+} 
+
+.address {
+  border: 4px solid skyblue;
+  border-radius: 3px;
+  background: darkred;
+  color: whitesmoke
+}
+
+.address:hover {
+  background-image: url("../assets/randySavage.gif");
+  background-position: center; 
+  background-size: 100%;
+} 
+
+.container {
+  border: 4px solid skyblue;
+  border-radius: 3px;
+  background: darkred;
+  color: whitesmoke;
+  text-decoration-style: none;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.editForm a {
+  border: 1px solid blue;
+  margin: 10px;
+  padding: 3px
+}

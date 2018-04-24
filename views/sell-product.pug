@@ -2,20 +2,21 @@ extends index.pug
 
 //- include partials/nav.pug
 block content
-  if message
-    h2= message
-  form.sell-form(method="POST" action="/sell")
-    h3 Title:
-    input(type="text" name="title" placeholder="title")
-    h3 Price:
-    input(type="price" name="price" placeholder="price")
-    h3 Description:
-    input(type="text" name="description" placeholder="description")
-    h3 Image URL:
-    input(type="text" name="img" placeholder="image")
-    h3 Quantity:
-    input(type="text" name="quantity" placeholder="quantity")
-    select(name="productTypeId")
-      each prod in productType
-        option(value = prod.id) #{prod.type}
-    button.sellSubmit(type="submit") Submit
+  div.container
+    if message
+      h2= message
+    form.sell-form(method="POST" action="/sell")
+      h3 Title:
+      input(type="text" name="title" placeholder="title")
+      h3 Price:
+      input(type="price" name="price" placeholder="price")
+      h3 Description:
+      input(type="text" name="description" placeholder="description")
+      h3 Image URL:
+      input(type="text" name="img" placeholder="image")
+      h3 Quantity:
+      input(type="text" name="quantity" placeholder="quantity")
+      select(name="productTypeId")
+        each prod in productType
+          option(value = prod.id) #{prod.type}
+      button.sellSubmit(type="submit") Submit
