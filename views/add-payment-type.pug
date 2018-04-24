@@ -1,6 +1,10 @@
+doctype html
 html
   head
-    title
-  body
-    h1 Please enter your information into the fields below! 
-    include partials/payment-form.pug
+    title Bangazon!
+  include stylesheets.pug
+    body
+    include nav
+      div.container
+        h1 Please enter your information into the fields below! 
+        include partials/payment-form.pug
