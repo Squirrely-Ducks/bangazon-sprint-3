@@ -3,7 +3,7 @@
 const displayPaymentType = (req, res, next) => {
 
     let {Payment_Types} = req.app.get('models');    
-    let userId = req.app.get('user').id;    
+    let userId = req.user.id;    
 
     Payment_Types.findAll({raw: true, where: {userId}})
     .then(paymentType => {
