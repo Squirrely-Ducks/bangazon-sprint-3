@@ -48,31 +48,19 @@ module.exports.searchProducts = (req, res, next) => {
 
 // method that allows user to add a product they have searched for to there order 
 module.exports.checkOrder = (req, res, next) => {
-  let { Orders } = req.app.get('models')
+  let { Orders, OrderProduct } = req.app.get('models')
   let userId = req.app.get('user').id
   let prodId = req.params.id
   console.log('prodId', prodId);
 
-  Orders.findAll({ raw: true, where: { paymentTypeId: null, userId } })
+  Orders.findOrCreate({ raw: true, where: { paymentTypeId: null, userId } })
     .then(order => {
-      const currentOrder = order.length === 0 ? createOrder(Orders, userId) : order[0]
-      console.log('current Order',currentOrder );
+      console.log('order',order );
       
-    });
-  };
-  
-  // method that helps create order
-  const createOrder = (Orders, userId) => {
-    console.log('is this getting in here');
-    
-    return new Promise((resolve, reject) => {
-      Orders.create({
-        create_date: (new Date()).toString(),
-        paymentTypeId: null,
-        userId: userId
-      })
-      .then(order =>{
-        resolve(order)
+      OrderProduct.create({OrderId: order[0].id, ProductId: prodId})
     })
-  });
+    // .then(addedOrder =>{
+    //   console.log('added order', addedOrder );
+      
+    // })  
 };
