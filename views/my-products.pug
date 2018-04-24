@@ -2,7 +2,7 @@ extends index.pug
 
 block content
   each product in products
-    .sell-product-cards
+    .sell-product-cards.container
       form(method="POST" action=`/products/delete/${product.id}`)
         h2 Title: #{product.title}
         img(src="http://via.placeholder.com/200x300" alt="Placeholder")

@@ -1,15 +1,18 @@
+extends index.pug
+
 
 block content
-  h2 Billing Information
-  form.editAccount(name="editAccount" method="POST" action="/edit")
-    h3 Street:
-    input(type="text" name="street" placeholder="street" value=`${street}`)
-    h3 City:
-    input(type="text" name="city" placeholder="city" value=`${city}`)
-    h3 State:
-    input(type="text" name="state" placeholder="state" value=`${state}`)
-    h3 Zip:
-    input(type="text" name="zip" placeholder="zip" value=`${zip}`)
-    h3 Phone:
-    input(type="text" name="phone" placeholder="phone" value=`${phone}`)
-    button.edit-submit(type="submit") Update Info
+  div.container
+    h2 Billing Information
+    form.editAccount(name="editAccount" method="POST" action="/edit")
+      h3 Street:
+      input(type="text" name="street" placeholder="street" value=`${street}`)
+      h3 City:
+      input(type="text" name="city" placeholder="city" value=`${city}`)
+      h3 State:
+      input(type="text" name="state" placeholder="state" value=`${state}`)
+      h3 Zip:
+      input(type="text" name="zip" placeholder="zip" value=`${zip}`)
+      h3 Phone:
+      input(type="text" name="phone" placeholder="phone" value=`${phone}`)
+      button.edit-submit(type="submit") Update Info
