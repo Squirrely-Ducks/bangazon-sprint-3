@@ -3,9 +3,12 @@
 const { Router } = require("express");
 const router = Router();
 
-const { myAccountView, editAccount } = require('../controllers/account-viewCtrl');
+const { myAccountView, editAccount, populateEditForm } = require('../controllers/account-viewCtrl');
 
 router.get('/account', myAccountView);
+
+router.get('/edit-account-info', populateEditForm);
+
 
 router.get('/edit-account-info', (req, res) => {
   res.render('edit-account-info');

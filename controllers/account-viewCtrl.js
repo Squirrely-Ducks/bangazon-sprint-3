@@ -8,7 +8,17 @@ module.exports.myAccountView = (req, res) => {
     let userData = foundUser.dataValues
     res.render("my-account", { userData });
   })
+};
 
+module.exports.populateEditForm = (req, res) => {
+  const userId = req.app.get("user").id;
+  const { User } = req.app.get("models");
+  User.find({where: { id: userId } })
+    .then(foundUser => {
+      console.log("foundUser",foundUser.dataValues)
+      // res.json(foundUser)
+      res.render("edit-account-info", foundUser.dataValues)
+    });
 };
 
 module.exports.editAccount = (req, res, next) => {
