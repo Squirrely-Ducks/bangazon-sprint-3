@@ -51,16 +51,9 @@ module.exports.checkOrder = (req, res, next) => {
   let { Orders, OrderProduct } = req.app.get('models')
   let userId = req.app.get('user').id
   let prodId = req.params.id
-  console.log('prodId', prodId);
-
+  
   Orders.findOrCreate({ raw: true, where: { paymentTypeId: null, userId } })
     .then(order => {
-      console.log('order',order );
-      
       OrderProduct.create({OrderId: order[0].id, ProductId: prodId})
-    })
-    // .then(addedOrder =>{
-    //   console.log('added order', addedOrder );
-      
-    // })  
+    }) 
 };
