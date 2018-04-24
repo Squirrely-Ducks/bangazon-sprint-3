@@ -1,25 +1,27 @@
 //- extends my-account
+doctype html
+html
+  head
+    title Bangazon!
+  include stylesheets.pug
+    body
+    include nav
+      block content
+      div.container
+          h1
+            a(href="account") Go Back to my account
+          h1 Welcome to the payment type edit screen
+          
+          h2 Please make a selection
 
-block content
-  h1
-    a(href="account") Go Back to my account
-  h1 Welcome to the payment type edit screen
-  
-  h2 Please make a selection
+          ul
+            li 
+              a(href="/payment-type/add") ADD NEW PAYMENT TYPE
 
-  ul
-    li 
-      a(href="/payment-type/add") ADD NEW PAYMENT TYPE
-
-  h2 Here are your current payment types:
-    ul 
-    each payment in paymentType
-      form(method="POST" action=`/payment-types/delete/${payment.id}`)    
-        li= `Card Type: ${payment.type}`
-        li= `Account number: ${payment.account_number}`
-        button(type="submit") Delete this Payment!
-     
-      
-    
-   
-  
+          h2 Here are your current payment types:
+            ul 
+            each payment in paymentType
+              form(method="POST" action=`/payment-types/delete/${payment.id}`)    
+                li= `Card Type: ${payment.type}`
+                li= `Account number: ${payment.account_number}`
+                button(type="submit") Delete this Payment!
