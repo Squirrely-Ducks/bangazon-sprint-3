@@ -9,3 +9,5 @@ block content
         h4 Price: $#{prod.price.slice(0,-2)}.#{prod.price.slice(-2)}
         h4 Description: #{prod.description}
         h5 Quantity: #{prod.quantity}
+        form(method="POST", action=`/search/add/${prod.id}`)
+            button Add to Order
