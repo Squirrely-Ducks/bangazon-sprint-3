@@ -3,6 +3,7 @@ extends index.pug
 
 block content
   div.editAccount.container
+    a.back(href="/account") back
     h2 Billing Information
     form.editAccount(name="editAccount" method="POST" action="/edit")
       h3 Street:

@@ -32,6 +32,7 @@ module.exports.cancelOrder = (req, res) => {
     })
 };
 
+
 module.exports.selectPaymentType = (req, res) => {
   const userId = req.app.get("user").id;
   const { Payment_Types } = req.app.get("models");
@@ -53,3 +54,17 @@ module.exports.addPaymentToOrder = (req, res) => {
       res.redirect("/account")
     })
 };
+
+module.exports.removeItem = (req,res) => {
+  const userId = req.app.get("user").id;
+  const { OrderProduct } = req.app.get("models");
+  OrderProduct.destroy({
+    where: {
+      ProductId : req.params.id
+    }
+  })
+    .then(()=>{
+      res.redirect("/cart")
+    })
+}
+
