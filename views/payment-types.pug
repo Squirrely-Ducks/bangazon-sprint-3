@@ -18,25 +18,6 @@ html
             li 
               a(href="/payment-type/add") ADD NEW PAYMENT TYPE
 
-<<<<<<< HEAD
-  ul
-    li 
-      a(href="/payment-type/add") ADD NEW PAYMENT TYPE
-
-  h2 Here are your current payment types:
-    ul 
-    
-    each payment in paymentType
-      form(method="POST" action=`/payment-types/delete/${payment.id}`)    
-        li= `Card Type: ${payment.type}`
-        li= `Account number: ${payment.account_number}`
-        button(type="submit") Delete this Payment!
-     
-      
-    
-   
-  
-=======
           h2 Here are your current payment types:
             ul 
             each payment in paymentType
@@ -44,4 +25,3 @@ html
                 li= `Card Type: ${payment.type}`
                 li= `Account number: ${payment.account_number}`
                 button(type="submit") Delete this Payment!
->>>>>>> master
