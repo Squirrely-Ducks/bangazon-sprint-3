@@ -55,5 +55,6 @@ module.exports.checkOrder = (req, res, next) => {
   Orders.findOrCreate({ raw: true, where: { paymentTypeId: null, userId } })
     .then(order => {
       OrderProduct.create({OrderId: order[0].id, ProductId: prodId})
+      res.redirect("/cart");      
     }) 
 };
