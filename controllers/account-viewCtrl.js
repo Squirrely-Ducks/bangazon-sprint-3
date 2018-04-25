@@ -3,7 +3,7 @@
 module.exports.myAccountView = (req, res) => {
   const user = req.app.get("user");
   const { User } = req.app.get("models");
-  User.findOne({where:{id: user.id}})
+  User.findOne({where:{id: req.user.id}})
   .then((foundUser)=>{
     let userData = foundUser.dataValues
     res.render("my-account", { userData });

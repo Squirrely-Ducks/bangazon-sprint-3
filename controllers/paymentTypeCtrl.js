@@ -1,8 +1,10 @@
 "use strict";
 
 const displayPaymentType = (req, res, next) => {
+
     let {Payment_Types} = req.app.get('models');    
-    let userId = req.app.get('user').id;    
+    let userId = req.user.id;    
+
     Payment_Types.findAll({raw: true, where: {userId}})
     .then(paymentType => {
       res.render('payment-types', {paymentType});
@@ -21,9 +23,6 @@ if (user){
     newPaymentType.userId = user.id;
     Payment_Types.create(newPaymentType)
     .then((paymentType)=>{
-        //in case to redirect to new payment
-        // const { id } = paymentType.get({plain:true});
-        // res.redirect(`/payment-type/details/${id}`); 
         res.redirect('/payment-types')
     })
     .catch(err=>{
@@ -33,8 +32,19 @@ if (user){
     res.render('login');
     }
 }
-
-module.exports = {addPaymentType, displayPaymentType};
+const deletePaymentType = (req,res,next)=>{
+    let { Orders } =req.app.get('models');
+    let { Payment_Types } = req.app.get('models');
+    let { id } = req.params;
+    Payment_Types.destroy({where: {id}})
+    .then(() => {
+        res.redirect("/payment-types");
+    })
+    .catch(err=>{
+        console.log('ERROR:',err);
+    });
+}
+module.exports = {addPaymentType, displayPaymentType, deletePaymentType};
 
 
 

@@ -89,6 +89,16 @@ a {
   background-size: 100%;
 } 
 
+.prodContainer {
+  border: 4px solid skyblue;
+  border-radius: 3px;
+  background: darkred;
+  color: whitesmoke;
+  text-decoration-style: none;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 1rem;
+}
 .container {
   border: 4px solid skyblue;
   border-radius: 3px;
@@ -97,6 +107,7 @@ a {
   text-decoration-style: none;
   list-style-type: none;
   padding: 1rem;
+  margin: 1rem;
 }
 
 .editForm a {
@@ -105,6 +116,12 @@ a {
   padding: 3px
 }
 
-.editForm a:hover {
-  cursor: url("")
+.editForm:hover {
+  background-image: url("../assets/vince.gif")
+}
+
+.editAccount:hover {
+  background-image: url("../assets/ric.gif");
+  background-position: center; 
+  background-size: 100%;
 }
