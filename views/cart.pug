@@ -2,7 +2,7 @@
 
 block content
   h1 Your Orders
-
+  include nav
   each order in viewOpenOrders
     form(method="POST" action="/cart/delete/")
       button(type="submit") Clear Shopping Cart
