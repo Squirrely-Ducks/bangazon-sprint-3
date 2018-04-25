@@ -16,7 +16,6 @@ module.exports.populateEditForm = (req, res) => {
   User.find({where: { id: userId } })
     .then(foundUser => {
       console.log("foundUser",foundUser.dataValues)
-      // res.json(foundUser)
       res.render("edit-account-info", foundUser.dataValues)
     });
 };
