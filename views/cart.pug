@@ -15,3 +15,5 @@ html
                 ul
                   li= `${product.title}`
                   li= `${product.price}`
+                  form(method="POST" action=`/cart/removeItem/${product.id}`)
+                    button(type="submit") &times;
