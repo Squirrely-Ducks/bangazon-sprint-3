@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Bangazon!
+  include stylesheets.pug
+    body
+    include nav
+  div.container
+    block content
+      h1 Select Payment Option
+      each paymentType in viewPaymentTypes
+        form(method="POST" action=`/cart/selectPayment/${paymentType.id}`)
+          button(type="submit") Select
+        ul
+          li=`${paymentType.type}`
