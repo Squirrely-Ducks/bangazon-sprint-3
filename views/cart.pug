@@ -11,6 +11,8 @@ html
             each order in viewOpenOrders
               form(method="POST" action="/cart/delete/")
                 button(type="submit") Clear Shopping Cart
+              li
+                a(href="/cart/selectPayment") Checkout
               each product in order.Products
                 ul
                   li= `${product.title}`
