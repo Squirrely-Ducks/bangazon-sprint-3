@@ -14,7 +14,6 @@ module.exports.viewShoppingCart = (req, res) => {
       }
   ]})
     .then((viewOpenOrders) => {
-      // res.json(viewOpenOrders);
       res.render("cart", { viewOpenOrders })
     })
 };

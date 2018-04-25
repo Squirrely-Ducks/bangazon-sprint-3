@@ -1,6 +1,6 @@
 "use strict";
 
-var Sequelize = require('sequelize');
+let Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
 module.exports.displayProductDetails = (req, res, next) => {
