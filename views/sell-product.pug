@@ -2,7 +2,7 @@ extends index.pug
 
 //- include partials/nav.pug
 block content
-  div.container
+  div.container.sellForm
     if message
       h2= message
     form.sell-form(method="POST" action="/sell")

@@ -5,8 +5,9 @@ if session.passport
       input.searchBar(type="text" placeholder="search-products" name="search")
       button(type="submit" formaction="/search") search
     ul.navMenu
-      li 
-        a(href="/sell") Sell Product
+      li
+        div.navOption  
+          a(href="/sell") Sell Product
       li 
         a(href="/products/list") My Products
       li 
