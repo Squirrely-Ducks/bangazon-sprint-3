@@ -1,0 +1,11 @@
+extends my-account
+
+block content
+  h1
+    a(href="account") Go Back to my account!
+  h1 Welcome to the orders view page!
+  h2 Here are your current orders, click on one to see it's deets!
+    ul 
+      each order in closedOrder
+        li= `${order.id}`
+          a(href=`/${order}/${order.id}`) Order: `${order.id}`
