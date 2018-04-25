@@ -16,7 +16,30 @@ const displayOrder = (req, res, next) => {
 
 
 
-module.exports= {displayOrder};
+
+
+
+const displayProductsOnOrder = (req, res, next) => {
+    console.log("hello");
+
+        const userId = req.app.get("user").id;
+        const { Orders, Product } = req.app.get("models");
+        Orders.findAll({
+          where:{
+            // paymentTypeId: !null,
+            userId
+          },
+          include: [{
+            model:Product,
+            }
+        ]})
+          .then((viewProducts) => {
+            res.render("order-products-details", { viewProducts })
+          })
+};
+
+
+module.exports= {displayOrder, displayProductsOnOrder};
 
 
 

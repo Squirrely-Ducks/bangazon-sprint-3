@@ -8,4 +8,4 @@ block content
     ul 
       each order in closedOrder
         li= `${order.id}`
-          a(href=`/${order}/${order.id}`) Order: `${order.id}`
+          a(href=`/view-orders/products/${order.id}`)= `Your Order Number:${order.id}`
