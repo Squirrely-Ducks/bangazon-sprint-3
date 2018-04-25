@@ -27,20 +27,32 @@ In your terminal enter the following commands to gain access to the BangazonCorp
 <img src="https://media.giphy.com/media/dCC3oILAm1TUoyBX8g/giphy.gif">
 
 ```
-3. Users can view their account details
+3. Users can add products to their shopping cart
+```
+
+<img src="https://media.giphy.com/media/DN1WE451IzyvpD9SgZ/giphy.gif">
+
+
+```
+4. Users can view their account details
 
 ```
 
 <img src="https://media.giphy.com/media/1k2woGAzRweNuSnccX/giphy.gif">
 
 ```
-4. Users can edit their account details
+5. Users can edit their account details
 ```
 
 <img src="https://media.giphy.com/media/5wG50sifEFX7MiwJtL/giphy.gif">
 
 ```
-5. Users may upload their own products for sale
+6. Users may upload their own products for sale
 ```
 
 <img src="https://media.giphy.com/media/RLWacrt1W7W26YIzCp/giphy.gif">
+
+```
+7. To complete an order user adds payment type to that order
+```
+
