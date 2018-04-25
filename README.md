@@ -56,3 +56,4 @@ In your terminal enter the following commands to gain access to the BangazonCorp
 7. To complete an order user adds payment type to that order
 ```
 
+<img src="https://media.giphy.com/media/bcsp9ivyIO63sABQWw/giphy.gif">
