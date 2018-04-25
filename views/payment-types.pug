@@ -13,6 +13,7 @@ block content
 
   h2 Here are your current payment types:
     ul 
+    
     each payment in paymentType
       form(method="POST" action=`/payment-types/delete/${payment.id}`)    
         li= `Card Type: ${payment.type}`

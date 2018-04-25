@@ -15,4 +15,5 @@ router.use(require('./sellProductRoute'));
 router.use(require('./productRoute'));
 router.use(require('./accountRoute'));
 router.use(require('./addPaymentTypeRoute'))
+router.use(require('./viewOrderRoute'))
 module.exports = router;
