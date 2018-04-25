@@ -164,3 +164,38 @@ a {
   background-position: center; 
   background-size: 100%;
 }
+
+#signin {
+  /* align-content: center; */
+  display: grid;
+  color: darkblue;
+  text-shadow: 1px 1px darkred,
+                2px 2px whitesmoke;
+  font-size: 4rem;
+  /* width: 2rem; */
+  background-color: rgba(139, 0, 0, 0.4);
+  grid-column: 2;
+}
+
+#signin input.btn {
+  color: red;
+  font-size: 6rem;
+  background-color: blue;
+}
+
+.loginPage {
+  display: grid;
+  grid-column: 2;
+  margin-top: 4rem;
+  height: 300px;
+
+}
+
+.loginPage input{
+  border-radius: 10px 
+}
+
+.landing {
+  margin: 300px auto 0 auto;
+  height: 10rem;
+}
