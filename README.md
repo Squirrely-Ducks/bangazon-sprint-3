@@ -3,8 +3,6 @@
 ## Steps for Installation:
 In your terminal enter the following commands to gain access to the BangazonCorp API:
 * ``` git clone https://github.com/Squirrely-Ducks/bangazon-sprint-3.git ```
->To initialize the node packet manager:
-* ``` npm init -y ```
 >To install all required node packet dependancies"
 * ``` npm install ```
 
