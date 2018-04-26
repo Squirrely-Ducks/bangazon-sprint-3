@@ -5,7 +5,7 @@ block content
     a(href="account") Go Back to my account!
   h1 Welcome to the orders view page!
   h2 Here are your current orders, click on one to see it's deets!
-    ul 
+    ul.display-card.container 
       each order in closedOrder
         li= `${order.id}`
           a(href=`/view-orders/products/${order.id}`)= `Your Order Number:${order.id}`

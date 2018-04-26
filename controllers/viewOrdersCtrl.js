@@ -20,7 +20,6 @@ const displayOrder = (req, res, next) => {
 
 
 const displayProductsOnOrder = (req, res, next) => {
-    console.log("hello");
 
         const userId = req.app.get("user").id;
         const { Orders, Product } = req.app.get("models");
@@ -34,6 +33,7 @@ const displayProductsOnOrder = (req, res, next) => {
             }
         ]})
           .then((viewProducts) => {
+              console.log(viewProducts);
             res.render("order-products-details", { viewProducts })
           })
 };
