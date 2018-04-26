@@ -53,3 +53,17 @@ module.exports.addPaymentToOrder = (req, res) => {
       res.redirect("/account")
     })
 };
+
+module.exports.removeItem = (req,res) => {
+  const userId = req.app.get("user").id;
+  const { OrderProduct } = req.app.get("models");
+  OrderProduct.destroy({
+    where: {
+      ProductId : req.params.id
+    }
+  })
+    .then(()=>{
+      res.redirect("/cart")
+    })
+}
+
