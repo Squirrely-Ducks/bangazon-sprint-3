@@ -1,10 +1,8 @@
 "use strict";
 
 const displayPaymentType = (req, res, next) => {
-
     let {Payment_Types} = req.app.get('models');    
     let userId = req.user.id;    
-
     Payment_Types.findAll({raw: true, where: {userId}})
     .then(paymentType => {
       res.render('payment-types', {paymentType});
@@ -14,11 +12,9 @@ const displayPaymentType = (req, res, next) => {
 };
 
 const addPaymentType = (req, res, next)=>{
-
-let {Payment_Types} = req.app.get('models');
-let user = req.app.get("user");
-let {...newPaymentType}= req.body;
-
+    let {Payment_Types} = req.app.get('models');
+    let user = req.app.get("user");
+    let {...newPaymentType}= req.body;
 if (user){
     newPaymentType.userId = user.id;
     Payment_Types.create(newPaymentType)
@@ -32,8 +28,8 @@ if (user){
     res.render('login');
     }
 }
+
 const deletePaymentType = (req,res,next)=>{
-    let { Orders } =req.app.get('models');
     let { Payment_Types } = req.app.get('models');
     let { id } = req.params;
     Payment_Types.destroy({where: {id}})
@@ -44,6 +40,7 @@ const deletePaymentType = (req,res,next)=>{
         console.log('ERROR:',err);
     });
 }
+
 module.exports = {addPaymentType, displayPaymentType, deletePaymentType};
 
 

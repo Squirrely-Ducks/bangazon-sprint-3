@@ -32,7 +32,6 @@ module.exports.cancelOrder = (req, res) => {
     })
 };
 
-
 module.exports.selectPaymentType = (req, res) => {
   const userId = req.app.get("user").id;
   const { Payment_Types } = req.app.get("models");

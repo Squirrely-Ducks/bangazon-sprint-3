@@ -1,0 +1,12 @@
+extends index.pug
+block content
+  h2 Here are your order details
+  div 
+    ul.display-card.container
+      each order in viewProducts
+        each product in order.Products
+          li= `${product.title}`
+          li= `${product.description} only $${product.price}!`
+          li= `${product.img}`
+
+    
